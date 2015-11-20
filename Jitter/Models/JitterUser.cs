@@ -23,5 +23,9 @@ namespace Jitter.Models
 
         public string LastName { get; set; }
         public string Picture { get; set; }
+
+        public List<Jot> Jots { get; set; } //nov_20 branch. This says a JitterUser will have some list of Jots.
+        public List<JitterUser> Following { get; set; }
+        //public List<JitterUser> Followers { get; set; } //List of people who are following the JitterUser. More than one way to right this.
     }
 }
