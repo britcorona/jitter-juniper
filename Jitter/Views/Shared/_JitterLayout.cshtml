@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @Html.Partial("_Nav") @*This is the only code I have to type and the nav will be displayed.*@
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
