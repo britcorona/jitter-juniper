@@ -23,9 +23,15 @@ namespace Jitter
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            //Hot to add a new file in a pre-existing bundle
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/main.css", //dec_7_b2 branch
                       "~/Content/site.css"));
+
+            //How to add a new Script bundle
+            bundles.Add(new ScriptBundle("~/Content/myjavascript").Include(
+                       "~/Content/custom.js"));
         }
     }
 }
